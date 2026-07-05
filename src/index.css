@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #0B0E13;
+  --surface: #12161F;
+  --surface-2: #171C27;
+  --border: #262C3A;
+  --ink: #E8EAF1;
+  --muted: #8B92A5;
+  --accent: #7C9EF5;
+  --accent-2: #F5A66B;
+  --good: #6EE7B7;
+}
+
+html.light {
+  --canvas: #F5F6F9;
+  --surface: #FFFFFF;
+  --surface-2: #EEF0F5;
+  --border: #DFE3EC;
+  --ink: #1B1F27;
+  --muted: #626A7E;
+  --accent: #3E63DD;
+  --accent-2: #C4691F;
+  --good: #0F9D6E;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
