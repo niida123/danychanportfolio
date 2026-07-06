@@ -41,11 +41,11 @@ export default function Skills() {
                   {'{'} {group.label} {'}'}
                 </span>
 
-                <span className="hidden sm:inline text-accent">
+                <span className="text-accent">
                   from
                 </span>
 
-                <span className="hidden sm:inline text-accent2">
+                <span className="text-accent2">
                   '{group.path}'
                 </span>
               </div>
