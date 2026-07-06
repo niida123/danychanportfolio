@@ -32,13 +32,24 @@ export default function Skills() {
                 transition={{ duration: 0.5, delay: gi * 0.08 }}
                 className="rounded-2xl border border-border bg-surface p-6"
               >
-                <div className="mb-5 flex items-center gap-2 font-mono text-xs text-muted">
-                  <Icon size={14} className="text-accent" />
-                  <span className="text-accent">import</span>
-                  <span className="text-ink">{'{'} {group.label} {'}'}</span>
-                  <span className="text-accent">from</span>
-                  <span className="text-accent2">'{group.path}'</span>
-                </div>
+              <div className="mb-5 flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                <Icon size={14} className="text-accent" />
+
+                <span className="text-accent">import</span>
+
+                <span className="text-ink">
+                  {'{'} {group.label} {'}'}
+                </span>
+
+                <span className="hidden sm:inline text-accent">
+                  from
+                </span>
+
+                <span className="hidden sm:inline text-accent2">
+                  '{group.path}'
+                </span>
+              </div>
+
 
                 <div className="space-y-4">
                   {group.items.map((skill, i) => (
