@@ -97,7 +97,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute -bottom-8 -left-8 hidden h-28 w-28 overflow-hidden rounded-2xl border border-border bg-surface shadow-glass sm:flex">
+          <div className="absolute -bottom-4 -left-4 flex h-20 w-20 sm:h-28 sm:w-28 overflow-hidden rounded-2xl border border-border bg-surface shadow-glass">
             <img
               src={profilePhoto}
               alt="Portrait of Dany Chan"
