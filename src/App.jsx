@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
-    <BrowserRouter basename="/danychanportfolio">
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
