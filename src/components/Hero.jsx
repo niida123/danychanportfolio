@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { ArrowDown, Download, Mail, FolderGit2 } from 'lucide-react'
 import { useTypingEffect } from '../hooks/useTypingEffect'
 import { scrollToId } from '../utils/scrollTo'
-import profilePhoto from '../assets/Chan Dany.JPG'
+import profilePhoto from '../assets/dany.jpg'
 
 const roles = ['Full Stack Web Developer', 'Laravel Developer', 'React Developer', 'REST API Builder']
 
@@ -53,7 +53,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.97 }}
-              href="/Chan Dany Resume.pdf"
+              href="/resume.pdf"
               download
               className="flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-medium text-ink"
             >
