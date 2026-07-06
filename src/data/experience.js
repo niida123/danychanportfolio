@@ -76,11 +76,11 @@ export const education = [
   },
 ]
 // assets
-import certificate1 from '../assets/certificates/BacIIcertificate.jpg'
+import certificate1 from '../assets/certificates/baciicertificate.jpg'
 import certificate2 from '../assets/certificates/certificate.jpg'
 import certificate3 from '../assets/certificates/certificate1.jpg'
 import certificate4 from '../assets/certificates/intern.jpg'
-import certificate5 from '../assets/certificates/Work certificate.png'
+import certificate5 from '../assets/certificates/work-certificate.png'
 
 export const certificates = [
   { id: 'cert-1', title: 'BACII Certificate', issuer: 'Certificate', year: '', image: certificate1 },
