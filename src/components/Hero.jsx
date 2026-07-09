@@ -4,7 +4,7 @@ import { useTypingEffect } from '../hooks/useTypingEffect'
 import { scrollToId } from '../utils/scrollTo'
 import profilePhoto from '../assets/dany.jpg'
 
-const roles = ['Full Stack Web Developer', 'Laravel Developer', 'React Developer', 'REST API Builder']
+const roles = ['Full Stack Web Developer', 'Laravel Developer', 'PHP Developer', 'JavaScript Developer', 'MySQL Developer']
 
 export default function Hero() {
   const typed = useTypingEffect(roles, { pause: 1400 })
@@ -38,7 +38,7 @@ export default function Hero() {
 
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
             I build modern, scalable, and user-friendly web applications using Laravel,
-            React, JavaScript, PHP, and MySQL.
+             JavaScript, PHP, and MySQL.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -88,7 +88,7 @@ export default function Hero() {
               <p className="pl-4"><span className="text-accent">"name"</span>: <span className="text-accent2">"Dany Chan"</span>,</p>
               <p className="pl-4"><span className="text-accent">"role"</span>: <span className="text-accent2">"Full Stack Developer"</span>,</p>
               <p className="pl-4"><span className="text-accent">"stack"</span>: [</p>
-              <p className="pl-8 text-good">"Laravel", "React", "PHP",</p>
+              <p className="pl-8 text-good">"Laravel", "PHP",</p>
               <p className="pl-8 text-good">"JavaScript", "MySQL"</p>
               <p className="pl-4">],</p>
               <p className="pl-4"><span className="text-accent">"focus"</span>: <span className="text-accent2">"clean, scalable systems"</span>,</p>

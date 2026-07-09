@@ -4,10 +4,10 @@ export const skillGroups = [
     label: 'frontend',
     path: 'src/skills/frontend.js',
     items: [
-      { name: 'HTML5', level: 90 },
-      { name: 'CSS3', level: 88 },
-      { name: 'JavaScript', level: 85 },
-      { name: 'Bootstrap', level: 88 },
+      { name: 'HTML5', level: 80 },
+      { name: 'CSS3', level: 80 },
+      { name: 'JavaScript', level: 70 },
+      { name: 'Bootstrap', level: 70 },
     ],
   },
   {
@@ -25,9 +25,9 @@ export const skillGroups = [
     path: 'src/skills/languages.js',
     items: [
       { name: 'PHP', level: 70 },
-      { name: 'Java', level: 65 },
-      { name: 'Python', level: 65 },
-      { name: 'C#', level: 70 },
+      { name: 'Java', level: 50 },
+      { name: 'Python', level: 50 },
+      { name: 'C#', level: 50 },
     ],
   },
   {
@@ -37,7 +37,7 @@ export const skillGroups = [
     items: [
       { name: 'MySQL', level: 88 },
       { name: 'PostgreSQL', level: 70 },
-      { name: 'SQL Server', level: 72 },
+      { name: 'SQL Server', level: 70 },
     ],
   },
   {
@@ -49,7 +49,7 @@ export const skillGroups = [
       { name: 'GitHub', level: 85 },
       { name: 'VS Code', level: 95 },
       { name: 'Microsoft Office', level: 88 },
-      { name: 'Figma', level: 65 },
+      { name: 'Figma', level: 50 },
     ],
   },
 ]
