@@ -2,12 +2,11 @@ import { motion } from 'framer-motion'
 import { ArrowDown, Download, Mail, FolderGit2 } from 'lucide-react'
 import { useTypingEffect } from '../hooks/useTypingEffect'
 import { scrollToId } from '../utils/scrollTo'
+import { profile } from '../data/profile'
 import profilePhoto from '../assets/dany.jpg'
 
-const roles = ['Full Stack Web Developer', 'Laravel Developer', 'PHP Developer', 'JavaScript Developer', 'MySQL Developer']
-
 export default function Hero() {
-  const typed = useTypingEffect(roles, { pause: 1400 })
+  const typed = useTypingEffect(profile.roles, { pause: 1400 })
 
   return (
     <section id="home" className="relative overflow-hidden pt-20 sm:pt-28">
@@ -28,7 +27,7 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Hi, I'm <span className="text-accent">Dany Chan</span>
+            Hi, I'm <span className="text-accent">{profile.name}</span>
           </h1>
 
           <p className="mt-3 h-8 font-mono text-lg text-accent2 sm:text-xl">
@@ -37,8 +36,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            I build modern, scalable, and user-friendly web applications using Laravel,
-             JavaScript, PHP, and MySQL.
+            {profile.tagline}
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">

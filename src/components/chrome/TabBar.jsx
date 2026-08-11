@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { navItems } from '../../data/social'
 import { scrollToId } from '../../utils/scrollTo'
 import ThemeToggle from '../ThemeToggle'
+import ExportPdfButton from '../ExportPdfButton'
 
 export default function TabBar({ activeId, theme, onToggleTheme }) {
   const [open, setOpen] = useState(false)
@@ -48,6 +49,7 @@ export default function TabBar({ activeId, theme, onToggleTheme }) {
         </div>
 
         <div className="ml-auto flex items-center gap-2 py-2 lg:ml-0">
+          {/* <ExportPdfButton className="px-2.5 py-1.5 sm:px-3 sm:py-2" labelClassName="hidden sm:inline" /> */}
           <ThemeToggle theme={theme} onToggle={onToggleTheme} />
           <button
             className="flex h-8 w-8 items-center justify-center rounded-md border border-border text-ink lg:hidden"
@@ -81,6 +83,9 @@ export default function TabBar({ activeId, theme, onToggleTheme }) {
                   <span className="ml-auto text-xs text-muted">{item.label}</span>
                 </button>
               ))}
+              {/* <div className="border-t border-border/60 py-3">
+                <ExportPdfButton className="w-full justify-center py-2.5" />
+              </div> */}
             </div>
           </motion.div>
         )}

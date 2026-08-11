@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Code2, Palette, Server, GraduationCap, Users } from 'lucide-react'
 import SectionHeading from './SectionHeading'
 import { stats } from '../data/social'
+import { profile } from '../data/profile'
 import { useCountUp } from '../hooks/useCountUp'
 
 const passions = [
@@ -43,7 +44,7 @@ export default function About() {
           <SectionHeading
             path="about.jsx"
             title="A developer who enjoys turning problems into working software."
-            description="I'm a motivated Information Technology student with hands-on experience in full-stack web development using Laravel, MySQL, JavaScript, and Bootstrap. I enjoy building modern web applications and solving real-world problems, from the database schema all the way up to the interface someone actually clicks on."
+            description={profile.summary}
           />
 
           <motion.div
